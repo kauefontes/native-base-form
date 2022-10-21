@@ -13,6 +13,7 @@ export function Input({ errorMessage = null, isInvalid, ...rest }: Props) {
                 fontSize="md"
                 height={16}
                 isInvalid={invalid}
+                placeholderTextColor="gray.500"
                 _focus={{
                     backgroundColor: "gray.400",
                     borderWidth: 2,
@@ -24,6 +25,9 @@ export function Input({ errorMessage = null, isInvalid, ...rest }: Props) {
                 }}
                 {...rest}
             />
+            <FormControl.ErrorMessage>
+                {errorMessage}
+            </FormControl.ErrorMessage>
         </FormControl>
     )
 }
