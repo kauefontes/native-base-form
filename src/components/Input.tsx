@@ -9,7 +9,7 @@ export function Input({ ...rest }: IInputProps) {
             marginBottom={4}
             _focus={{
                 backgroundColor: "gray.200",
-                borderWidth: 1,
+                borderWidth: 2,
                 borderColor: "green.500"
             }}
             {...rest}
