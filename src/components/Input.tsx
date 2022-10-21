@@ -9,12 +9,12 @@ export function Input({ errorMessage = null, isInvalid, ...rest }: Props) {
     return (
         <FormControl marginBottom={4} isInvalid={invalid}>
             <NativeBaseInput
-                backgroundColor="gray.400"
+                backgroundColor="gray.200"
                 fontSize="md"
                 height={16}
                 isInvalid={invalid}
                 _focus={{
-                    backgroundColor: "gray.200",
+                    backgroundColor: "gray.400",
                     borderWidth: 2,
                     borderColor: "green.500"
                 }}
